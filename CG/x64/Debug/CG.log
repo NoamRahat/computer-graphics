@@ -1,0 +1,7 @@
+﻿  Main.cpp
+  Renderer.cpp
+C:\Users\User\computer-graphics\CG\Renderer.cpp(89,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Renderer.cpp(106,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Renderer.cpp(120,43): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Generating Code...
+  CG.vcxproj -> C:\Users\User\computer-graphics\x64\Debug\CG.exe

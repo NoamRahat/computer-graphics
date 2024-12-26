@@ -3,297 +3,208 @@
 #include <AntTweakBar/include/AntTweakBar.h>
 #include <Glew/include/gl/glew.h>
 #include <freeglut/include/GL/freeglut.h>
-
-#include <vector>
+// <vector>
 #include <Windows.h>
 #include <assert.h>
 #include <iostream>
+#include <cassert>
 
 #include "Utils.h"
 #include "Renderer.h"
-#include "Obj Parser/wavefront_obj.h"
-
+#include "GlobalSettings.h"
+#include "../Obj Parser/wavefront_obj.h"
 
 #include <glm/mat4x4.hpp>
 #include <glm/vec4.hpp>
 
 
+
+// Timer variables
 LARGE_INTEGER StartingTime, EndingTime, ElapsedMicroseconds;
 LARGE_INTEGER Frequency;
 
-double g_Scale = 1.0;
-//double g_quaternion[4] = {0.0, 0.0, 0.0, 1.0};
-
-//points coordinates
-int g_P1x = 20, g_P1y = 20; //P1
-int g_P2x = 500, g_P2y = 400; //P2
-
-//obj data type
+// Global variables for shapes and objects
 Wavefront_obj objScene;
+Renderer renderer;
 
-void TW_CALL loadOBJModel(void* clientData);
-void initScene();
-void initGraphics(int argc, char *argv[]);
+// Forward declarations
+void setupTweakBar();
+void loadOBJModel();
+void initGraphics(int argc, char* argv[]);
 void drawScene();
-void Display();
-void Reshape(int width, int height);
-void MouseButton(int button, int state, int x, int y);
-void MouseMotion(int x, int y);
-void PassiveMouseMotion(int x, int y);
-void Keyboard(unsigned char k, int x, int y);
-void Special(int k, int x, int y);
-void Terminate(void);
+void display();
+void reshape(int width, int height);
+void mouseButton(int button, int state, int x, int y);
+void mouseMotion(int x, int y);
+void passiveMouseMotion(int x, int y);
+void keyboard(unsigned char key, int x, int y);
+void specialKeys(int key, int x, int y);
+void cleanUp();
+void glUseScreenCoordinates(int width, int height);
 
-
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 	// Initialize openGL, glut, glew
-	initGraphics(argc, argv);
-	// Initialize AntTweakBar
-	TwInit(TW_OPENGL, NULL);
-	//initialize the timer frequency
-	QueryPerformanceFrequency(&Frequency); 
-	// Set GLUT callbacks
-	glutDisplayFunc(Display);
-	glutReshapeFunc(Reshape);
-	glutMouseFunc(MouseButton);
-	glutMotionFunc(MouseMotion);
-	glutPassiveMotionFunc(PassiveMouseMotion);
-	glutKeyboardFunc(Keyboard);
-	glutSpecialFunc(Special);
-	
-	//send 'glutGetModifers' function pointer to AntTweakBar.
-	//required because the GLUT key event functions do not report key modifiers states.
-	//TwGLUTModifiersFunc(glutGetModifiers);
+    initGraphics(argc, argv);
 
+    // Initialize AntTweakBar
+    TwInit(TW_OPENGL, NULL);
 
-	atexit(Terminate);  //called after glutMainLoop ends
+    // Initialize timer frequency
+    QueryPerformanceFrequency(&Frequency);
 
+    // Setup tweak bar
+    setupTweakBar();
 
-	// Create a tweak bar
-	TwBar* bar = TwNewBar("TweakBar");
+    // GLUT callbacks
+    glutDisplayFunc(display);
+    glutReshapeFunc(reshape);
+    glutMouseFunc(mouseButton);
+    glutMotionFunc(mouseMotion);
+    glutPassiveMotionFunc(passiveMouseMotion);
+    glutKeyboardFunc(keyboard);
+    glutSpecialFunc(specialKeys);
 
-	TwDefine(" GLOBAL help='This example shows how to integrate AntTweakBar with GLUT and OpenGL.' "); // Message added to the help bar.
-	TwDefine(" TweakBar size='200 400' color='96 216 224' "); // change default tweak bar size and color
-	//the x,y coordinates
-	TwAddVarRW(bar, "P1.x", TW_TYPE_UINT16, &g_P1x, " min=0 max=1500 step=1 keyIncr=x keyDecr=X help='Point 1 x coordinate' ");
-	TwAddVarRW(bar, "P1.y", TW_TYPE_UINT16, &g_P1y, " min=0 max=750 step=1 keyIncr=y keyDecr=Y help='Point 1 y coordinate' ");
-	TwAddVarRW(bar, "P2.x", TW_TYPE_UINT16, &g_P2x, " min=0 max=1500 step=1 keyIncr=a keyDecr=A help='Point 2 x coordinate' ");
-	TwAddVarRW(bar, "P2.y", TW_TYPE_UINT16, &g_P2y, " min=0 max=750 step=1 keyIncr=b keyDecr=B help='Point 2 y coordinate' ");
-	TwAddVarRO(bar, "time (us)", TW_TYPE_UINT32, &ElapsedMicroseconds.LowPart, "help='shows the drawing time in micro seconds'");
-	
-	//add 'g_Scale' to 'bar': this is a modifiable (RW) variable of type TW_TYPE_DOUBLE. Its key shortcuts are [s] and [S].
-	TwAddVarRW(bar, "Scale", TW_TYPE_DOUBLE, &g_Scale, " min=0.01 max=2.5 step=0.01 keyIncr=s keyDecr=S help='Scale the object (1=original size).' ");
+    // Cleanup on exit
+    atexit(cleanUp);
 
-	//add 'g_quaternion' to 'bar': this is a variable of type TW_TYPE_QUAT4D which defines the object's orientation using quaternions
-	//TwAddVarRW(bar, "ObjRotation", TW_TYPE_QUAT4D, &g_quaternion, " label='Object rotation' opened=true help='Change the object orientation.' ");
+    // Start GLUT main loop
+    glutMainLoop();
 
-	TwAddButton(bar, "open", loadOBJModel, NULL, " label='Open OBJ File...' ");
-
-
-
-	// Call the GLUT main loop
-	glutMainLoop();
-
-	return 0;
+    return 0;
 }
 
+void setupTweakBar() {
+    TwBar* bar = TwNewBar("Settings");
 
-void TW_CALL loadOBJModel(void *data)
-{
-	std::wstring str = getOpenFileName();
+    // Add shape mode selection
+    TwEnumVal shapeModes[] = {
+        {LINE, "Line"}, {SQUARE, "Square"}, {CIRCLE, "Circle"},
+        {TRIANGLE, "Triangle"}, {STAR, "Star"}, {PENTAGON, "Pentagon"}
+    };
+    TwType shapeType = TwDefineEnum("ShapeMode", shapeModes, 6);
+    TwAddVarRW(bar, "Shape Mode", shapeType, &GlobalSettings::currentShapeMode, "help='Select shape mode.'");
 
-	bool result = objScene.load_file(str);
+    // Add controls for line coordinates
+    TwAddVarRW(bar, "Line Start X", TW_TYPE_INT32, &GlobalSettings::lineStartX, "min=0 max=1500 step=1 group='Line'");
+    TwAddVarRW(bar, "Line Start Y", TW_TYPE_INT32, &GlobalSettings::lineStartY, "min=0 max=750 step=1 group='Line'");
+    TwAddVarRW(bar, "Line End X", TW_TYPE_INT32, &GlobalSettings::lineEndX, "min=0 max=1500 step=1 group='Line'");
+    TwAddVarRW(bar, "Line End Y", TW_TYPE_INT32, &GlobalSettings::lineEndY, "min=0 max=750 step=1 group='Line'");
 
-	if(result)
-	{
-		std::cout << "The obj file was loaded successfully" << std::endl;
-	}
-	else
-	{
-		std::cerr << "Failed to load obj file" << std::endl;
-	}
+    // Add controls for shape size
+    TwAddVarRW(bar, "Shape Size", TW_TYPE_INT32, &GlobalSettings::shapeSize, "min=10 max=500 step=10");
 
-	std::cout << "The number of vertices in the model is: " << objScene.m_points.size() << std::endl;
-	std::cout << "The number of triangles in the model is: " << objScene.m_faces.size() << std::endl;
+    // Add controls for circle
+    TwAddVarRW(bar, "Circle Center X", TW_TYPE_INT32, &GlobalSettings::circleCenterX, "min=0 max=1500 step=1 group='Circle'");
+    TwAddVarRW(bar, "Circle Center Y", TW_TYPE_INT32, &GlobalSettings::circleCenterY, "min=0 max=750 step=1 group='Circle'");
+    TwAddVarRW(bar, "Circle Radius", TW_TYPE_INT32, &GlobalSettings::circleRadius, "min=10 max=500 step=1 group='Circle'");
 
+    // Add color picker
+    TwAddVarRW(bar, "Shape Color", TW_TYPE_COLOR32, &GlobalSettings::lineColor, "help='Select shape or line color.'");
 }
 
+void initGraphics(int argc, char* argv[]) {
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+    glutInitWindowSize(800, 600);
+    glutCreateWindow("Interactive Renderer");
 
-//do not change this function unless you really know what you are doing!
-void initGraphics(int argc, char *argv[])
-{
-	// Initialize GLUT
-	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-	glutInitWindowSize(960, 640);
-	glutCreateWindow("Computer Graphics Skeleton using AntTweakBar and freeGlut");
-	glutCreateMenu(NULL);
+    glDisable(GL_DEPTH_TEST);
+    glDisable(GL_CULL_FACE);
+    glDisable(GL_NORMALIZE);
+    glDisable(GL_LIGHTING);
 
-	// Initialize OpenGL
-	glDisable(GL_DEPTH_TEST);
-	glDisable(GL_CULL_FACE);
-	glDisable(GL_NORMALIZE);
-	glDisable(GL_LIGHTING);
-	glColor3f(1.0, 0.0, 0.0);
-
-	// Initialize GLEW
-	GLenum err = glewInit();
-	if(err != GLEW_OK)
-	{
-		assert(0);
-		return;
-	}
+    GLenum err = glewInit();
+    if (err != GLEW_OK) {
+        assert(0);
+        return;
+    }
 }
 
-
-//this is just an example of usage for the Renderer::drawPixels function.
-//remove these lines and use your own code for drawing the scene.
-//it is also a good idea to move the drawScene() function to another file/class
-void drawScene()
-{
-
-
-	glm::dmat4x4 model(1.0, 0.0, 0.0, 0.0,   0.0, 1.0, 0.0, 0.0,    0.0, 0.0, 1.0, 0.0,    0.0, 0.0, 0.0, 1.0);
-	glm::vec4 vec(1.0, 1.0, 1.0, 1.0);
-	glm::vec4 res = model*vec;
-	res = vec*model;
-
-
-	static int k = 1;
-
-	Renderer renderer;
-	std::vector<Pixel> pixels;
-	pixels.reserve(100000); //consider changing this if more pixels are colored in the next assignments
-
-	bool blue = true;
-
-	for(int i = 0; i < 400; i++)
-	{
-		if(i%k == 0)
-		{
-			blue = !blue;
-		}
-
-		for(int j = 0; j < 100; j++)
-		{
-			Pixel pixel;
-			pixel.x = i;
-			pixel.y = j;
-
-			if(blue)
-			{
-				pixel.color = 0xffff0000;
-			}
-			else //red
-			{
-				pixel.color = 0xff0000ff;
-			}
-			pixels.push_back(pixel);
-		}
-	}
-	renderer.drawPixels(pixels);
-	k++;
+void drawScene() {
+    switch (GlobalSettings::currentShapeMode) {
+    case LINE:
+        renderer.drawLine(GlobalSettings::lineStartX, GlobalSettings::lineStartY,
+            GlobalSettings::lineEndX, GlobalSettings::lineEndY,
+            GlobalSettings::lineColor);
+        break;
+    case SQUARE:
+        renderer.drawSquare(300, 300, GlobalSettings::shapeSize, GlobalSettings::lineColor);
+        break;
+    case CIRCLE:
+        renderer.drawCircle(GlobalSettings::circleCenterX, GlobalSettings::circleCenterY,
+            GlobalSettings::circleRadius, GlobalSettings::lineColor);
+        break;
+    case TRIANGLE:
+        renderer.drawTriangle(400, 400, GlobalSettings::shapeSize, GlobalSettings::lineColor);
+        break;
+    case STAR:
+        renderer.drawStar(400, 400, GlobalSettings::shapeSize, GlobalSettings::lineColor);
+        break;
+    case PENTAGON:
+        renderer.drawPentagon(400, 400, GlobalSettings::shapeSize, GlobalSettings::lineColor);
+        break;
+    }
 }
 
-
-//this will make sure that integer coordinates are mapped exactly to corresponding pixels on screen
-void glUseScreenCoordinates(int width, int height)
-{
-	// Set OpenGL viewport and camera
-	glViewport(0, 0, width, height);
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
-	glOrtho(0, width, 0, height, -1, 1);
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
-}
-
-
-// Callback function called by GLUT to render screen
-void Display()
-{
-//  	static int counter = 0;
-//  	std::cout << "C: " << counter << std::endl;
-//  	counter++;
-
-    glClearColor(0, 0, 0, 1); //background color
+void display() {
+    glClearColor(0, 0, 0, 1);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	//time measuring - don't delete
-	QueryPerformanceCounter(&StartingTime);
+    QueryPerformanceCounter(&StartingTime);
 
- 	drawScene();
+    drawScene();
 
-	//time measuring - don't delete
-	QueryPerformanceCounter(&EndingTime);
-	ElapsedMicroseconds.QuadPart = EndingTime.QuadPart - StartingTime.QuadPart;
-	ElapsedMicroseconds.QuadPart *= 1000000;
-	ElapsedMicroseconds.QuadPart /= Frequency.QuadPart;
+    QueryPerformanceCounter(&EndingTime);
+    ElapsedMicroseconds.QuadPart = EndingTime.QuadPart - StartingTime.QuadPart;
+    ElapsedMicroseconds.QuadPart *= 1000000;
+    ElapsedMicroseconds.QuadPart /= Frequency.QuadPart;
 
-	// Draw tweak bars
-	TwDraw();
+    std::cout << "Frame time (microseconds): " << ElapsedMicroseconds.QuadPart << std::endl;
 
-	//swap back and front frame buffers
-	glutSwapBuffers();
+    TwDraw();
+    glutSwapBuffers();
 }
 
-
-// Callback function called by GLUT when window size changes
-void Reshape(int width, int height)
-{
-	glUseScreenCoordinates(width, height);
-
-	//////////////////////////////////////
-	///////add your reshape code here/////////////
-
-
-
-	//////////////////////////////////////
-
-    // Send the new window size to AntTweakBar
+void reshape(int width, int height) {
+    glUseScreenCoordinates(width, height);
     TwWindowSize(width, height);
-	glutPostRedisplay();
+    glutPostRedisplay();
 }
 
-
-
-void MouseButton(int button, int state, int x, int y)
-{
-	TwEventMouseButtonGLUT(button, state, x, y);
-	glutPostRedisplay();
+void glUseScreenCoordinates(int width, int height) {
+    glViewport(0, 0, width, height);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glOrtho(0, width, 0, height, -1, 1);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
 }
 
-void MouseMotion(int x, int y)
-{
-	TwEventMouseMotionGLUT(x, y);
-	glutPostRedisplay();
+void mouseButton(int button, int state, int x, int y) {
+    if (!TwEventMouseButtonGLUT(button, state, x, y)) {}
+    glutPostRedisplay();
 }
 
-void PassiveMouseMotion(int x, int y)
-{
-	TwEventMouseMotionGLUT(x, y);
+void mouseMotion(int x, int y) {
+    if (!TwEventMouseMotionGLUT(x, y)) {}
+    glutPostRedisplay();
 }
 
-
-void Keyboard(unsigned char k, int x, int y)
-{
-	TwEventKeyboardGLUT(k, x, y);
-	glutPostRedisplay();
+void passiveMouseMotion(int x, int y) {
+    if (!TwEventMouseMotionGLUT(x, y)) {}
 }
 
-
-void Special(int k, int x, int y)
-{
-	TwEventSpecialGLUT(k, x, y);
-	glutPostRedisplay();
+void keyboard(unsigned char key, int x, int y) {
+    if (!TwEventKeyboardGLUT(key, x, y)) {}
+    glutPostRedisplay();
 }
 
+void specialKeys(int key, int x, int y) {
+    if (!TwEventSpecialGLUT(key, x, y)) {}
+    glutPostRedisplay();
+}
 
-// Function called at exit
-void Terminate(void)
-{ 
+void cleanUp() {
     TwTerminate();
 }
-
-

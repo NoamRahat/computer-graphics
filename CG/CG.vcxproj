@@ -173,12 +173,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Obj Parser\wavefront_obj.cpp" />
+    <ClCompile Include="GlobalSettings.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Obj Parser\wavefront_obj.h" />
+    <ClInclude Include="GlobalSettings.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
