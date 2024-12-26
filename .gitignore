@@ -14,7 +14,7 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
+# *.dll
 
 # Fortran module files
 *.mod
@@ -27,6 +27,27 @@
 *.lib
 
 # Executables
-*.exe
+# *.exe
 *.out
 *.app
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# json files
+*.json
+
+# hidden directories
+**/.git
+**/.vscode
+**/.idea
+**/.vs
+**/.clangd
+**/.clang-tidy
+**/.ccls-cache
+**/.ccls
+**/.ccls-cache
+**/.dist
