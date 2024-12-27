@@ -1,8 +1,13 @@
-#include <iostream>
-#include <fstream>
-#include <assert.h>
-
 #include "Wavefront_obj.h"
+
+std::vector<glm::vec3> convertToGLMVec3(const std::vector<Wavefront_obj::Vector>& points) {
+	std::vector<glm::vec3> glmPoints;
+	glmPoints.reserve(points.size());
+	for (const auto& point : points) {
+		glmPoints.emplace_back(point[0], point[1], point[2]);
+	}
+	return glmPoints;
+}
 
 bool Wavefront_obj::load_file(std::wstring filename)
 {
@@ -16,6 +21,7 @@ bool Wavefront_obj::load_file(std::wstring filename)
 		std::cerr << "Could not open file " << filename.c_str() << std::endl; 
 		return false;
 	}
+
 	while(objFile.getline(line, 8192))
 	{          
 
@@ -93,6 +99,11 @@ bool Wavefront_obj::load_file(std::wstring filename)
 
 	assert(numFaces >= 1); //a valid model has at least one face
 	assert(numVertices >= 3); //a valid model has at least three vertices
+	if (numFaces == 0 || numVertices < 3) {
+		std::cerr << "Error: Invalid OBJ file. Must have at least one face and three vertices." << std::endl;
+		return false;
+	}
+
 
 	for(int i = 0; i < numFaces; i++)
 	{
@@ -129,5 +140,39 @@ bool Wavefront_obj::load_file(std::wstring filename)
 		}
 	}
 
+	if (m_points.size() >= 3) {
+		std::vector<glm::vec3> glmPoints = convertToGLMVec3(m_points);
+		boundingBox.compute(glmPoints); // Compute the bounding box using vertices
+	}
+
+    canonicalTransform(); // Normalize the model
+
 	return true;
 }
+
+void Wavefront_obj::canonicalTransform() {
+	Vector minCorner(FLT_MAX);
+	Vector maxCorner(-FLT_MAX);
+
+	// Calculate min and max corners
+	for (const auto& v : m_points) {
+		for (int i = 0; i < 3; ++i) {
+			minCorner[i] = std::min(minCorner[i], v[i]);
+			maxCorner[i] = std::max(maxCorner[i], v[i]);
+		}
+	}
+
+	// Compute center and scale
+	Vector center = (minCorner + maxCorner) / 2.0;
+	double scale = std::max(maxCorner[0] - minCorner[0],
+				   std::max(maxCorner[1] - minCorner[1], maxCorner[2] - minCorner[2]));
+
+	// Normalize points
+	for (auto& v : m_points) {
+		for (int i = 0; i < 3; ++i) {
+			v[i] = (v[i] - center[i]) / scale * 2.0; // Normalize to [-1, 1]
+		}
+	}
+}
+
+

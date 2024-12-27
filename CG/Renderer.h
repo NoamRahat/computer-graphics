@@ -1,9 +1,10 @@
 #pragma once
-
+#include <glm/glm.hpp>
 #include <vector>
 #include <cmath>
 #include <freeglut/include/GL/freeglut.h>
-#include "../Obj Parser/wavefront_obj.h"
+
+class Wavefront_obj;
 
 struct Pixel
 {
@@ -15,6 +16,7 @@ class Renderer
 {
 public:
     void drawLine(int x1, int y1, int x2, int y2, unsigned int color);
+    void drawLine(const glm::vec3& start, const glm::vec3& end, unsigned int color);
     std::vector<std::pair<int, int>> Renderer::generatePolygonPoints(int x, int y, int sides, int radius);
     void drawSquare(int x, int y, int size, unsigned int color);
     void drawCircle(int cx, int cy, int radius, unsigned int color);

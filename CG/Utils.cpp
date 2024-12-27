@@ -1,10 +1,12 @@
 #include "Utils.h"
 #include <windows.h>
 #include <iostream>
+#include <fstream>
 
-// Convert quaternion to a 4x4 rotation matrix
-void MathUtils::ConvertQuaternionToMatrix(const double quat[4], double mat[16]) {
-    double yy2 = 2.0 * quat[1] * quat[1];
+//helper function to convert a quaternion to a 4x4 rotation matrix
+void ConvertQuaternionToMatrix(const double quat[4], double mat[16])
+{
+	double yy2 = 2.0 * quat[1] * quat[1];
     double xy2 = 2.0 * quat[0] * quat[1];
     double xz2 = 2.0 * quat[0] * quat[2];
     double yz2 = 2.0 * quat[1] * quat[2];
@@ -20,15 +22,27 @@ void MathUtils::ConvertQuaternionToMatrix(const double quat[4], double mat[16]) 
     mat[12] = mat[13] = mat[14] = 0; mat[15] = 1;
 }
 
-std::wstring FileDialogUtils::getOpenFileName() {
-    OPENFILENAME ofn = { 0 };
-    TCHAR fileStr[10000] = { 0 };
 
-    ofn.lStructSize = sizeof(ofn);
-    ofn.lpstrFile = fileStr;
-    ofn.nMaxFile = sizeof(fileStr) / sizeof(TCHAR) - 1;
 
-    if (GetOpenFileName(&ofn)) {
+void displayMessage(const std::string& str)
+{
+	std::wstring wStr(str.begin(), str.end());
+	MessageBox(NULL, wStr.c_str(), TEXT("Renderer"), MB_OK);
+}
+
+
+std::wstring getOpenFileName()
+{
+	const int strMaxLen = 10000;
+	OPENFILENAME ofn = {0};
+	TCHAR fileStr[strMaxLen] = {0};
+
+	ofn.lStructSize = sizeof(ofn);
+	ofn.lpstrFile = fileStr;
+	ofn.lpstrFile[0] = '\0';
+	ofn.nMaxFile = sizeof(fileStr)/sizeof(TCHAR) - 1;
+
+	if (GetOpenFileName(&ofn)) {
         return fileStr;
     } else {
         std::cerr << "File selection canceled or failed." << std::endl;
@@ -36,9 +50,9 @@ std::wstring FileDialogUtils::getOpenFileName() {
     }
 }
 
-void TransformationUtils::transformToScreenSpace(Wavefront_obj& obj, int screenWidth, int screenHeight) {
-    for (auto& vertex : obj.m_points) {
-        vertex[0] = (vertex[0] + 1) * (screenWidth / 2.0);
-        vertex[1] = (vertex[1] + 1) * (screenHeight / 2.0);
-    }
-}
+//void transformToScreenSpace(Wavefront_obj& obj, int screenWidth, int screenHeight) {
+//    for (auto& vertex : obj.m_points) {
+//        vertex[0] = (vertex[0] + 1) * (screenWidth / 2);  // Normalize X
+//        vertex[1] = (vertex[1] + 1) * (screenHeight / 2); // Normalize Y
+//    }
+//}

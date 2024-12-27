@@ -7,4 +7,6 @@ namespace GlobalSettings {
     int lineEndX = 150, lineEndY = 150;
     int shapeSize = 100;
     int circleCenterX = 200, circleCenterY = 200, circleRadius = 50;
+    double g_Scale = 1.0;
+    //double g_quaternion[4] = {0.0, 0.0, 0.0, 1.0};
 }

@@ -9,4 +9,5 @@ namespace GlobalSettings {
     extern int lineEndX, lineEndY;
     extern int shapeSize;
     extern int circleCenterX, circleCenterY, circleRadius;
+	extern double g_Scale;
 }

@@ -173,14 +173,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Obj Parser\wavefront_obj.cpp" />
+    <ClCompile Include="BBox.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="GlobalSettings.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MeshModel.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Obj Parser\wavefront_obj.h" />
+    <ClInclude Include="BBox.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="GlobalSettings.h" />
+    <ClInclude Include="MeshModel.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
