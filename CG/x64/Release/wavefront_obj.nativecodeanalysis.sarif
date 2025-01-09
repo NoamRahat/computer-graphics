@@ -1,0 +1,1033 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/Wavefront_obj.h"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::Face::{ctor}",
+                  "decoratedName": "??0Face@Wavefront_obj@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/Wavefront_obj.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::Vector::{ctor}",
+                  "decoratedName": "??0Vector@Wavefront_obj@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/Wavefront_obj.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 49,
+                  "endLine": 26,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::Vector::[]",
+                  "decoratedName": "??AVector@Wavefront_obj@@QEAAAEANH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'Wavefront_obj::Vector::operator[]' can be declared 'noexcept' (f.6)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/Wavefront_obj.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::Vector::[]",
+                  "decoratedName": "??AVector@Wavefront_obj@@QEAAAEANH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/Wavefront_obj.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 42,
+                  "endLine": 26,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::Vector::[]",
+                  "decoratedName": "??AVector@Wavefront_obj@@QEAAAEANH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/Wavefront_obj.h"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 61,
+                  "endLine": 27,
+                  "endColumn": 68
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::Vector::[]",
+                  "decoratedName": "??AVector@Wavefront_obj@@QEBAAEBNH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'Wavefront_obj::Vector::operator[]' can be declared 'noexcept' (f.6)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/Wavefront_obj.h"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::Vector::[]",
+                  "decoratedName": "??AVector@Wavefront_obj@@QEBAAEBNH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/Wavefront_obj.h"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 54,
+                  "endLine": 27,
+                  "endColumn": 68
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::Vector::[]",
+                  "decoratedName": "??AVector@Wavefront_obj@@QEBAAEBNH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 13,
+                  "endLine": 99,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'numFaces' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 6,
+                  "endLine": 89,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'numVertices' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 6,
+                  "endLine": 90,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'numNormals' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 6,
+                  "endLine": 91,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'numTextureCoordinates' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 6,
+                  "endLine": 92,
+                  "endColumn": 55
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'f' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 9,
+                  "endLine": 99,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'line': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 8,
+                  "endLine": 19,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'line': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 8,
+                  "endLine": 23,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'line': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 4,
+                  "endLine": 25,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 4,
+                  "endLine": 25,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'line': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 8,
+                  "endLine": 30,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'line': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 4,
+                  "endLine": 32,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 4,
+                  "endLine": 32,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'line': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 8,
+                  "endLine": 37,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'line': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 4,
+                  "endLine": 39,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 4,
+                  "endLine": 39,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'line': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 8,
+                  "endLine": 44,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'line': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 7,
+                  "endLine": 48,
+                  "endColumn": 132
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 7,
+                  "endLine": 48,
+                  "endColumn": 132
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'line': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 12,
+                  "endLine": 53,
+                  "endColumn": 65
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 12,
+                  "endLine": 53,
+                  "endColumn": 65
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'line': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 12,
+                  "endLine": 58,
+                  "endColumn": 104
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 12,
+                  "endLine": 58,
+                  "endColumn": 104
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26494",
+          "message": {
+            "text": "Variable 'line' is uninitialized. Always initialize an object (type.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/wavefront_obj.cpp"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Wavefront_obj::load_file",
+                  "decoratedName": "?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "line"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.42.34435.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/obj parser/wavefront_obj.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "8770357db8b2e38d6ce67e66ebdfe1fc23704e1603c4158b515e53f1dbd01559"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/idolu/Desktop/HW3/Obj Parser/Wavefront_obj.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "9c3eb58a6b597cec3a91b526adbd4d0db068dbde4ca33b9bd2115a47575cd287"
+          }
+        }
+      ]
+    }
+  ]
+}

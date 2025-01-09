@@ -1,5 +1,8 @@
 C:\Users\User\computer-graphics\Obj Parser\wavefront_obj.cpp;C:\Users\User\computer-graphics\CG\x64\Debug\wavefront_obj.obj
-C:\Users\User\computer-graphics\CG\GlobalSettings.cpp;C:\Users\User\computer-graphics\CG\x64\Debug\GlobalSettings.obj
+C:\Users\User\computer-graphics\CG\BB.cpp;C:\Users\User\computer-graphics\CG\x64\Debug\BB.obj
+C:\Users\User\computer-graphics\CG\camera.cpp;C:\Users\User\computer-graphics\CG\x64\Debug\camera.obj
+C:\Users\User\computer-graphics\CG\light.cpp;C:\Users\User\computer-graphics\CG\x64\Debug\light.obj
 C:\Users\User\computer-graphics\CG\Main.cpp;C:\Users\User\computer-graphics\CG\x64\Debug\Main.obj
+C:\Users\User\computer-graphics\CG\Object.cpp;C:\Users\User\computer-graphics\CG\x64\Debug\Object.obj
 C:\Users\User\computer-graphics\CG\Renderer.cpp;C:\Users\User\computer-graphics\CG\x64\Debug\Renderer.obj
 C:\Users\User\computer-graphics\CG\Utils.cpp;C:\Users\User\computer-graphics\CG\x64\Debug\Utils.obj

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>Wavefront_obj.h</FILENAME>
+      <LINE>13</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::Face::{ctor}</FUNCTION>
+    <DECORATED>??0Face@Wavefront_obj@@QEAA@XZ</DECORATED>
+    <FUNCLINE>13</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>Wavefront_obj.h</FILENAME>
+      <LINE>22</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::Vector::{ctor}</FUNCTION>
+    <DECORATED>??0Vector@Wavefront_obj@@QEAA@XZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>Wavefront_obj.h</FILENAME>
+      <LINE>26</LINE>
+      <COLUMN>55</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::Vector::[]</FUNCTION>
+    <DECORATED>??AVector@Wavefront_obj@@QEAAAEANH@Z</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>Wavefront_obj.h</FILENAME>
+      <LINE>26</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Wavefront_obj::Vector::operator[]' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::Vector::[]</FUNCTION>
+    <DECORATED>??AVector@Wavefront_obj@@QEAAAEANH@Z</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>Wavefront_obj.h</FILENAME>
+      <LINE>26</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::Vector::[]</FUNCTION>
+    <DECORATED>??AVector@Wavefront_obj@@QEAAAEANH@Z</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>Wavefront_obj.h</FILENAME>
+      <LINE>27</LINE>
+      <COLUMN>67</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::Vector::[]</FUNCTION>
+    <DECORATED>??AVector@Wavefront_obj@@QEBAAEBNH@Z</DECORATED>
+    <FUNCLINE>27</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>Wavefront_obj.h</FILENAME>
+      <LINE>27</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Wavefront_obj::Vector::operator[]' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::Vector::[]</FUNCTION>
+    <DECORATED>??AVector@Wavefront_obj@@QEBAAEBNH@Z</DECORATED>
+    <FUNCLINE>27</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>Wavefront_obj.h</FILENAME>
+      <LINE>27</LINE>
+      <COLUMN>53</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::Vector::[]</FUNCTION>
+    <DECORATED>??AVector@Wavefront_obj@@QEBAAEBNH@Z</DECORATED>
+    <FUNCLINE>27</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>89</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'numFaces' does not change after construction, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>90</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'numVertices' does not change after construction, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>91</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'numNormals' does not change after construction, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>92</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'numTextureCoordinates' does not change after construction, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'f' does not change after construction, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>19</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'line': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'line': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'line': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'line': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>32</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'line': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>32</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'line': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'line': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>44</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'line': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>48</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'line': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>48</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>53</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'line': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>53</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>58</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'line': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>58</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\idolu\Desktop\HW3\Obj Parser\</FILEPATH>
+      <FILENAME>wavefront_obj.cpp</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26494</DEFECTCODE>
+    <DESCRIPTION>Variable 'line' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
+    <FUNCTION>Wavefront_obj::load_file</FUNCTION>
+    <DECORATED>?load_file@Wavefront_obj@@QEAA_NV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>line</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

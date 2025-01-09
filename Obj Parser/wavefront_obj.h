@@ -4,7 +4,7 @@
 #pragma once
 
 #include <vector>
-#include <string>
+
 
 struct Wavefront_obj
 {
@@ -33,6 +33,8 @@ struct Wavefront_obj
 	std::vector<Face> m_faces;
 
 	bool load_file(std::wstring filename);
+
+	void clear();
 
 };
 

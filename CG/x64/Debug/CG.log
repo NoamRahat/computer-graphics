@@ -1,7 +1,243 @@
-﻿  Main.cpp
+﻿  wavefront_obj.cpp
+C:\Users\User\computer-graphics\Obj Parser\wavefront_obj.cpp(89,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\computer-graphics\Obj Parser\wavefront_obj.cpp(90,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\computer-graphics\Obj Parser\wavefront_obj.cpp(91,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\computer-graphics\Obj Parser\wavefront_obj.cpp(92,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  BB.cpp
+  camera.cpp
+C:\Users\User\computer-graphics\CG\camera.cpp(36,38): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\User\computer-graphics\CG\camera.cpp(36,38): warning C4244:         with
+C:\Users\User\computer-graphics\CG\camera.cpp(36,38): warning C4244:         [
+C:\Users\User\computer-graphics\CG\camera.cpp(36,38): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\camera.cpp(36,38): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\camera.cpp(37,38): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\User\computer-graphics\CG\camera.cpp(37,38): warning C4244:         with
+C:\Users\User\computer-graphics\CG\camera.cpp(37,38): warning C4244:         [
+C:\Users\User\computer-graphics\CG\camera.cpp(37,38): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\camera.cpp(37,38): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\camera.cpp(40,56): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\User\computer-graphics\CG\camera.cpp(40,56): warning C4244:         with
+C:\Users\User\computer-graphics\CG\camera.cpp(40,56): warning C4244:         [
+C:\Users\User\computer-graphics\CG\camera.cpp(40,56): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\camera.cpp(40,56): warning C4244:         ]
+  light.cpp
+  Main.cpp
+C:\Users\User\computer-graphics\CG\Main.cpp(593,30): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(594,37): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(595,38): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(598,111): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(598,111): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(598,111): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(598,111): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(598,111): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(598,67): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(598,67): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(598,67): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(598,67): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(598,67): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(600,169): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(600,169): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(600,169): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(600,169): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(600,169): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(600,125): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(600,125): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(600,125): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(600,125): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(600,125): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(600,87): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(600,87): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(600,87): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(600,87): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(600,87): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(600,43): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(600,43): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(600,43): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(600,43): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(600,43): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(601,169): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(601,169): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(601,169): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(601,169): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(601,169): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(601,125): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(601,125): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(601,125): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(601,125): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(601,125): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(601,87): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(601,87): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(601,87): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(601,87): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(601,87): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(601,43): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(601,43): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(601,43): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(601,43): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(601,43): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(602,169): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(602,169): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(602,169): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(602,169): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(602,169): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(602,125): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(602,125): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(602,125): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(602,125): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(602,125): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(602,87): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(602,87): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(602,87): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(602,87): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(602,87): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(602,43): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(602,43): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(602,43): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(602,43): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(602,43): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(605,168): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(605,168): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(605,168): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(605,168): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(605,168): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(605,124): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(605,124): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(605,124): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(605,124): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(605,124): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(605,87): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(605,87): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(605,87): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(605,87): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(605,87): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(605,43): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(605,43): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(605,43): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(605,43): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(605,43): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(606,168): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(606,168): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(606,168): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(606,168): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(606,168): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(606,124): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(606,124): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(606,124): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(606,124): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(606,124): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(606,87): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(606,87): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(606,87): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(606,87): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(606,87): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(606,43): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(606,43): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(606,43): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(606,43): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(606,43): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(607,168): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(607,168): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(607,168): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(607,168): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(607,168): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(607,124): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(607,124): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(607,124): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(607,124): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(607,124): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(607,87): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(607,87): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(607,87): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(607,87): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(607,87): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Main.cpp(607,43): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Main.cpp(607,43): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Main.cpp(607,43): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Main.cpp(607,43): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Main.cpp(607,43): warning C4244:         ]
+  Object.cpp
+C:\Users\User\computer-graphics\CG\Object.cpp(109,81): warning C4244: 'argument': conversion from 'const _Ty' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(109,81): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Object.cpp(109,81): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Object.cpp(109,81): warning C4244:             _Ty=int
+C:\Users\User\computer-graphics\CG\Object.cpp(109,81): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Object.cpp(109,46): warning C4244: 'argument': conversion from 'const _Ty' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(109,46): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Object.cpp(109,46): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Object.cpp(109,46): warning C4244:             _Ty=int
+C:\Users\User\computer-graphics\CG\Object.cpp(109,46): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Object.cpp(144,29): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\User\computer-graphics\CG\Object.cpp(253,21): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(254,22): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(255,20): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(307,13): warning C4244: 'initializing': conversion from 'const _Ty' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(307,13): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Object.cpp(307,13): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Object.cpp(307,13): warning C4244:             _Ty=float
+C:\Users\User\computer-graphics\CG\Object.cpp(307,13): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Object.cpp(309,13): warning C4244: 'initializing': conversion from 'const _Ty' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(309,13): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Object.cpp(309,13): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Object.cpp(309,13): warning C4244:             _Ty=float
+C:\Users\User\computer-graphics\CG\Object.cpp(309,13): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Object.cpp(311,13): warning C4244: 'initializing': conversion from 'const _Ty' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(311,13): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Object.cpp(311,13): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Object.cpp(311,13): warning C4244:             _Ty=float
+C:\Users\User\computer-graphics\CG\Object.cpp(311,13): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Object.cpp(313,13): warning C4244: 'initializing': conversion from 'const _Ty' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(313,13): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Object.cpp(313,13): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Object.cpp(313,13): warning C4244:             _Ty=float
+C:\Users\User\computer-graphics\CG\Object.cpp(313,13): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Object.cpp(367,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(408,20): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(418,17): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(419,19): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(420,18): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(482,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(519,15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(527,18): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(528,20): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(529,19): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(638,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(677,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(685,20): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(686,22): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(687,21): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(113,12): warning C4101: 'VTP': unreferenced local variable
+C:\Users\User\computer-graphics\CG\Object.cpp(282,13): warning C4101: 'I': unreferenced local variable
+C:\Users\User\computer-graphics\CG\Object.cpp(276,13): warning C4101: 'triangleCenter': unreferenced local variable
+C:\Users\User\computer-graphics\CG\Object.cpp(822,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(826,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(830,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(834,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(838,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(842,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\computer-graphics\CG\Object.cpp(930,61): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   Renderer.cpp
-C:\Users\User\computer-graphics\CG\Renderer.cpp(89,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\computer-graphics\CG\Renderer.cpp(106,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\User\computer-graphics\CG\Renderer.cpp(120,43): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\User\computer-graphics\CG\Renderer.cpp(17,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,83): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,83): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,83): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,83): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,83): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,62): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,62): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,62): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,62): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,62): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,40): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,40): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,40): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,40): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,40): warning C4244:         ]
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,19): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,19): warning C4244:         with
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,19): warning C4244:         [
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,19): warning C4244:             T=float
+C:\Users\User\computer-graphics\CG\Renderer.cpp(217,19): warning C4244:         ]
+  Utils.cpp
   Generating Code...
+LINK : warning LNK4004: unable to shrink ilk file, 'x64\Debug\CG.ilk', it may be larger than it needs to be, but is still valid; error code: 1224
   CG.vcxproj -> C:\Users\User\computer-graphics\x64\Debug\CG.exe

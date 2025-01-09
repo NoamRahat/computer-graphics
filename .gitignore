@@ -36,6 +36,28 @@
 *.su
 *.idb
 *.pdb
+*.tlog
+*.log
+*.ilk
+x64/Debug/CG.tlog/
+x64/Debug/CG.ilk
+x64/Debug/CG.log
+CG/x64/Debug/CG.ilk
+CG/x64/Debug/CG.log
+CG/x64/Debug/CG.tlog/CL.command.1.tlog
+CG/x64/Debug/CG.tlog/CL.read.1.tlog
+CG/x64/Debug/CG.tlog/CL.write.1.tlog
+CG/x64/Debug/CG.tlog/Cl.items.tlog
+CG/x64/Debug/CG.tlog/link.command.1.tlog
+CG/x64/Debug/CG.tlog/link.read.1.tlog
+CG/x64/Debug/CG.tlog/link.secondary.1.tlog
+CG/x64/Debug/CG.tlog/link.write.1.tlog
+
+
+**/.Debug
+**/.GG.tlog
+**/.tlog
+**/.x64
 
 # json files
 *.json

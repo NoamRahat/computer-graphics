@@ -131,3 +131,11 @@ bool Wavefront_obj::load_file(std::wstring filename)
 
 	return true;
 }
+
+void Wavefront_obj::clear()
+{
+	m_points.clear();
+	m_normals.clear();
+	m_textureCoordinates.clear();
+	m_faces.clear();
+}
