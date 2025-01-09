@@ -1,43 +1,29 @@
 #pragma once
-
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-
-class Camera {
-public:
+#include <glm/gtc/type_ptr.hpp>
+class Camera 
+{
+public:    
+    ~Camera();
     Camera();
-    glm::mat4 getViewMatrix() const;
-    glm::mat4 getProjectionMatrix(float aspectRatio) const;
-
-    void setPosition(const glm::vec3& position);
-    void lookAt(const glm::vec3& target);
-    void setPerspective(float fov, float nearPlane, float farPlane);
-    void setUpVector(const glm::vec3& upVector);
-
-    //getters
-    glm::vec3 getPosition() const;
-    glm::vec3 getTarget() const;
-    glm::vec3 getUpVector() const;
-    float getFov() const;
-    float getNearPlane() const;
-    float getFarPlane() const;
-
-    //setters
-    //void setPosition(const glm::vec3& position);
-    void setTarget(const glm::vec3& target);
-    //void setUpVector(const glm::vec3& upVector);
-    void setFov(float fov);
-    void setNearPlane(float nearPlane);
-    void setFarPlane(float farPlane);
+    // Projection parameters
+    float farPlane = 1000.0f;
+    float fov = 45.0f; // Default FoV in degrees
+    float aspectRatio = 1; // Default aspect ratio
+    float t= 1;
+    float r=1;
+    float n=1;
+    bool CameraType = 1;
+    //// Camera position and orientation
+    glm::vec3 position = glm::vec3(0.0f, 0.0f,6.0f); // Default position
+    glm::vec3 target = glm::vec3(0.0f, 0.0f, 0.0f); // Looking at the origin
     
+    glm::mat4 viewMatrix;
+    glm::mat4 projectionMatrix;
 
-private:
-    glm::vec3 position;
-    glm::vec3 target;
-    glm::vec3 up;
-    float fov;
-    float nearPlane;
-    float farPlane;
+    void updateProjectionMatrix(int H,int W);
+    void updateViewMatrix();
 
-    void validatePerspectiveParameters() const;
+protected:
 };

@@ -1,0 +1,1674 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'ConvertQuaternionToMatrix' can be declared 'noexcept' (f.6)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26429",
+          "message": {
+            "text": "Symbol 'quat' is never tested for nullness, it can be marked as not_null (f.23)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26429",
+          "message": {
+            "text": "Symbol 'mat' is never tested for nullness, it can be marked as not_null (f.23)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'yy2' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 9,
+                  "endLine": 10,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'xy2' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 9,
+                  "endLine": 11,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'xz2' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 9,
+                  "endLine": 12,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'yz2' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 9,
+                  "endLine": 13,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'zz2' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 9,
+                  "endLine": 14,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'wz2' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 9,
+                  "endLine": 15,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'wy2' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 9,
+                  "endLine": 16,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'wx2' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 9,
+                  "endLine": 17,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'xx2' does not change after construction, mark it as const (con.4)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 9,
+                  "endLine": 18,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'quat': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'mat': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 20,
+                  "endLine": 10,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 20,
+                  "endLine": 10,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 20,
+                  "endLine": 11,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 20,
+                  "endLine": 11,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 20,
+                  "endLine": 12,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 20,
+                  "endLine": 12,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 20,
+                  "endLine": 13,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 20,
+                  "endLine": 13,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 20,
+                  "endLine": 14,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 20,
+                  "endLine": 14,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 20,
+                  "endLine": 15,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 20,
+                  "endLine": 15,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 20,
+                  "endLine": 16,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 20,
+                  "endLine": 16,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 20,
+                  "endLine": 17,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 20,
+                  "endLine": 17,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 20,
+                  "endLine": 18,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 20,
+                  "endLine": 18,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endLine": 19,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 2,
+                  "endLine": 20,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 2,
+                  "endLine": 21,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 2,
+                  "endLine": 22,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 2,
+                  "endLine": 23,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 2,
+                  "endLine": 24,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 2,
+                  "endLine": 25,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 2,
+                  "endLine": 26,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 2,
+                  "endLine": 27,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 2,
+                  "endLine": 28,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 2,
+                  "endLine": 29,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 2,
+                  "endLine": 30,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2,
+                  "endLine": 31,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2,
+                  "endLine": 31,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2,
+                  "endLine": 31,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 2,
+                  "endLine": 32,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ConvertQuaternionToMatrix",
+                  "decoratedName": "?ConvertQuaternionToMatrix@@YAXQEBNQEAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "Function uses '20156' bytes of stack.  Consider moving some data to heap."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "getOpenFileName",
+                  "decoratedName": "?getOpenFileName@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26814",
+          "message": {
+            "text": "The const variable 'strMaxLen' can be computed at compile-time. Consider using constexpr (con.5)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "getOpenFileName",
+                  "decoratedName": "?getOpenFileName@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'fileStr': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 2,
+                  "endLine": 51,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "getOpenFileName",
+                  "decoratedName": "?getOpenFileName@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 2,
+                  "endLine": 52,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "getOpenFileName",
+                  "decoratedName": "?getOpenFileName@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'fileStr': No array to pointer decay (bounds.3)."
+          },
+          "analysisTarget": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/idolu/Desktop/HW3/CG/Utils.cpp"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 2,
+                  "endLine": 56,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "getOpenFileName",
+                  "decoratedName": "?getOpenFileName@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.42.34435.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "5173d8754b97e792f3a8e3c6f27edd2fe2b298a006fb2e322dec3ae3c3388ca8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/idolu/desktop/hw3/cg/utils.h"
+          },
+          "hashes": {
+            "sha-256": "d0c65941dc8d870034b7fce0b475fa2771d59bc6c27daf248354452858bd1952"
+          }
+        }
+      ]
+    }
+  ]
+}

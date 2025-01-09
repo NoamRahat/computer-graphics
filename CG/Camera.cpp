@@ -1,74 +1,64 @@
-#include "Camera.h"
-#include <stdexcept>
+#include"camera.h"
 
-Camera::Camera() :
-    position(0.0f, 0.0f, 5.0f),
-    target(0.0f, 0.0f, 0.0f),
-    up(0.0f, 1.0f, 0.0f),
-    fov(45.0f),
-    nearPlane(0.1f),
-    farPlane(1000.0f) {
+Camera::Camera() {
+    updateViewMatrix();
+    updateProjectionMatrix(16,9);
+}
+Camera::~Camera()
+{
 }
 
-void Camera::setPosition(const glm::vec3& pos) {
-    position = pos;
+void Camera::updateViewMatrix() {
+    glm::vec3 f = glm::normalize(position-target );         // Forward vector
+    glm::vec3 r = glm::normalize(glm::cross({ 0, 1, 0 }, f));  // Right vector
+    glm::vec3 u = glm::cross(f, r);                          // Up vector
+
+    viewMatrix = glm::mat4(
+        r.x, u.x, f.x, 0.0f, // Column 1
+        r.y, u.y, f.y, 0.0f, // Column 2
+        r.z, u.z, f.z, 0.0f, // Column 3
+        -glm::dot(r, position), -glm::dot(u, position), -glm::dot(f, position), 1.0f // Column 4
+    );
 }
 
-void Camera::lookAt(const glm::vec3& tgt) {
-    target = tgt;
-}
 
-void Camera::setPerspective(float fieldOfView, float nearPlane, float farPlane) {
-    this->fov = fieldOfView;
-    this->nearPlane = nearPlane;
-    this->farPlane = farPlane;
-    validatePerspectiveParameters();
-}
 
-void Camera::setUpVector(const glm::vec3& upVector) {
-    up = glm::normalize(upVector);
-}
+// Compute projection matrix
+void Camera:: updateProjectionMatrix(int h,int w) {
+    //not sure what aspect ratio neen to be so this is the other option
+    //aspectRatio = float(w) / float(h);
+    if (CameraType) {
+        double tanHalfFovY = std::tan(glm::radians(fov));
+        //projectionMatrix = glm::mat4x4(1/(aspectRatio* tan(glm::radians(fov)/2)), 0.0f, 0.0f, 0.0f,//first column
+        //    0.0f, 1 / tan(glm::radians(fov) /2), 0.0f, 0.0f,//second column
+        //    0.0f, 0.0f, -float((farPlane + nearPlane)) / float((farPlane - nearPlane)),-1.0f ,//third column
+        //    0.0f, 0.0f, (-2 * float(farPlane * nearPlane)) / float((farPlane - nearPlane)), 0.0f);
+        projectionMatrix[0][0] = 1.0 / (aspectRatio * tanHalfFovY); // Scale X
+        projectionMatrix[1][1] = 1.0 / tanHalfFovY;           // Scale Y
+        projectionMatrix[2][2] = -(farPlane + n) / (farPlane - n);          // Z normalization
+        projectionMatrix[2][3] = -1.0;                        // Perspective division
+        projectionMatrix[3][2] = -(2.0 * farPlane * n) / (farPlane - n);    // Depth offset
 
-void Camera::validatePerspectiveParameters() const {
-    if (fov <= 0 || fov >= 180) {
-        throw std::invalid_argument("Field of view must be between 0 and 180 degrees.");
+
     }
-    if (nearPlane <= 0 || farPlane <= nearPlane) {
-        throw std::invalid_argument("Near plane must be greater than 0 and less than far plane.");
+    else {
+        projectionMatrix = glm::mat4x4(n / r, 0.0f, 0.0f, 0.0f,//first column
+            0.0f, n / t, 0.0f, 0.0f,//second column
+            0.0f, 0.0f, -float((farPlane + n)) / float((farPlane - n)), (-2 * float(farPlane * n)) / float((farPlane - n)),//third column
+            0.0f, 0.0f, -1.0f, 0.0f);
     }
+   
+
 }
 
+glm::dmat4x4 perspectiveFoV(float fov, float aspect, float n, float f) {
+    // Convert field of view from degrees to radians
+   
 
-//getters
-glm::mat4 Camera::getViewMatrix() const {
-    return glm::lookAt(position, target, up);
+    // Construct the perspective matrix
+    glm::dmat4x4 perspective(0.0);
+
+
+    return perspective;
 }
 
-glm::mat4 Camera::getProjectionMatrix(float aspectRatio) const {
-    validatePerspectiveParameters();
-    return glm::perspective(glm::radians(fov), aspectRatio, nearPlane, farPlane);
-}
-
-glm::vec3 Camera::getPosition() const {
-    return position;
-}
-
-glm::vec3 Camera::getTarget() const {
-    return target;
-}
-
-glm::vec3 Camera::getUpVector() const {
-    return up;
-}
-
-float Camera::getFov() const {
-    return fov;
-}
-
-float Camera::getNearPlane() const {
-    return nearPlane;
-}
-
-float Camera::getFarPlane() const {
-    return farPlane;
-}
