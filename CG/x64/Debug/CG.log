@@ -1,0 +1,82 @@
+﻿  wavefront_obj.cpp
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\Obj Parser\Wavefront_obj.h(15,8): warning C4099: 'Wavefront_obj': type name first seen using 'class' now seen using 'struct'
+  (compiling source file '../Obj%20Parser/wavefront_obj.cpp')
+      C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\Obj Parser\Wavefront_obj.h(15,8):
+      see declaration of 'Wavefront_obj'
+  
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\Obj Parser\wavefront_obj.cpp(95,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\Obj Parser\wavefront_obj.cpp(96,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\Obj Parser\wavefront_obj.cpp(97,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\Obj Parser\wavefront_obj.cpp(98,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  BBox.cpp
+  Camera.cpp
+  Camera.h
+  Circle.h
+  Main.cpp
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\Obj Parser\wavefront_obj.h(15,8): warning C4099: 'Wavefront_obj': type name first seen using 'class' now seen using 'struct'
+  (compiling source file 'Main.cpp')
+      C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\Obj Parser\wavefront_obj.h(15,8):
+      see declaration of 'Wavefront_obj'
+  
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Main.cpp(166,45): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Main.cpp(167,42): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Main.cpp(398,22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Main.cpp(399,22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Main.cpp(428,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Main.cpp(429,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xutility(4709,18): warning C4244: '=': conversion from 'wchar_t' to 'char', possible loss of data
+  (compiling source file 'Main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xutility(4709,18):
+      the template instantiation context (the oldest one first) is
+          C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Main.cpp(165,37):
+          see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+              C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Main.cpp(165,24):
+              see the first reference to 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string' in 'loadOBJModel'
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xstring(793,17):
+          see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned __int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xstring(949,18):
+          see reference to function template instantiation '_OutIt *std::_Copy_n_unchecked4<wchar_t*,_Size,char*>(_InIt,_SizeTy,_OutIt)' being compiled
+          with
+          [
+              _OutIt=char *,
+              _Size=unsigned __int64,
+              _InIt=wchar_t *,
+              _SizeTy=unsigned __int64
+          ]
+  
+  Mathlib.cpp
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Mathlib.cpp(79,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Mathlib.cpp(89,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Mathlib.cpp(99,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Mathlib.cpp(109,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  MeshModel.cpp
+  MeshModel.h
+  Renderer.cpp
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\Obj Parser\wavefront_obj.h(15,8): warning C4099: 'Wavefront_obj': type name first seen using 'class' now seen using 'struct'
+  (compiling source file 'Renderer.cpp')
+      C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\Obj Parser\wavefront_obj.h(15,8):
+      see declaration of 'Wavefront_obj'
+  
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Renderer.cpp(104,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Renderer.cpp(121,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\CG\Renderer.cpp(135,43): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  GlobalSettings.cpp
+  Square.h
+  Utils.cpp
+  Generating Code...
+x64\Debug\Camera.obj : warning LNK4042: object specified more than once; extras ignored
+x64\Debug\MeshModel.obj : warning LNK4042: object specified more than once; extras ignored
+  CG.vcxproj -> C:\Users\caspi\OneDrive\שולחן העבודה\עפרי\לימודים\שנה ה\גרפיקה ממוחשבת\computer_graphics\ofri_HW2\x64\Debug\CG.exe
